@@ -1,3 +1,5 @@
+import { Teams } from "./Teams"
+
 
 export const Home = () => { 
     return (

@@ -12,13 +12,15 @@ export const getTeams = async () => {
     
     const resp = await fetch( url, options ); 
     const { response } = await resp.json(); 
+    console.log(response)
     const teams = response.map( team => ({
         name: team.name,
         nickname: team.nickname,
         logo: team.logo,
-        city: team.city
+        city: team.city,
+        id: team.id
     }));
-    console.log(response);
+    console.log(teams);
     return teams; 
 
 }

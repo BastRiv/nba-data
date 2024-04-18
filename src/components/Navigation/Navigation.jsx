@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home } from "./components/Home"
-import { Teams } from "./components/Teams"
-import { Menu } from "./components/Menu"
+import { Route, Routes } from 'react-router-dom';
+import { Menu } from '../Menu/Menu'; 
+import { Home } from '../News/Home';
+import { Teams } from '../Teams/Teams';
 
 export const Navigation = () => { 
 

@@ -1,4 +1,5 @@
 
+
 export const getTeams = async () => {
 
     const url = 'https://api-nba-v1.p.rapidapi.com/teams';
@@ -12,7 +13,6 @@ export const getTeams = async () => {
     
     const resp = await fetch( url, options ); 
     const { response } = await resp.json(); 
-    console.log(response)
     const teams = response.map( team => ({
         name: team.name,
         nickname: team.nickname,
